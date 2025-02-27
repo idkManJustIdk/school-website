@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="indexCSS.css"> <!-- Load CSS -->
+    <script defer src="loadComponents.js"></script> <!-- Load JavaScript -->
+</head>
+<body>
+
+    <div id="header"></div>  <!-- This will load header.html -->
+    
+    <main>
+        <div class="welcomeImage" >
+            <img src="images/image.png" style="user-select: none;">
+            <div class="welcomeText">
+
+                <p style="user-select: none;color: white;height:10px; font-family: sans-serif;font-weight: bold;font-size:  60px;">Welcome to Flowerita.</p>
+                <p style="user-select: none;color: white;font-weight:bold;font-size: 30px; font-family: sans-serif;">Bloom with Us, Naturally.</p>
+            </div>
+        </div>
+
+        <div class="firstDiv" >
+            <div class="firstIn" >
+                <img src="images/firstImage.png">
+            </div>
+            <div class="firstIn2">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis delectus quis, autem veritatis, possimus voluptatum exercitationem iste voluptatibus sapiente dignissimos ab facilis maxime quas tempora quos minima nam nostrum perspiciatis.
+            </div>
+        </div>
+        
+    </main>
+    
+    <div id="footer"></div>  <!-- This will load footer.html -->
+    <script>
+        window.addEventListener("scroll", function() {
+            let navbar = document.getElementById("container");
+    
+            if (window.scrollY > 50) { // When scrolled down 50px
+                navbar.style.background = "rgba(50, 50, 50, .75)"; // Gray background
+                navbar.style.transition = "background 0.3s ease-in-out"; // Smooth transition
+            } else {
+                navbar.style.background = "transparent"; // Back to transparent
+            }
+        });
+    </script>
+    
+
+</body>
+</html>
